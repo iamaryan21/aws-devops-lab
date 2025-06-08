@@ -1,0 +1,7 @@
+name: devops-lab
+services:
+  - name: frontend
+    port: 80
+
+  - name: backend
+    port: 8080 
