@@ -9,8 +9,9 @@ resource "aws_instance" "demo_ec2"{
     instance_type = var.instance_type
     vpc_security_group_ids = [aws_security_group.demo_sg.id]
     key_name = var.key_name
+    tags = var.tags
 
-    user_data = templatefile("${path.module}/install_httpd.sh", {})
+    //user_data = templatefile("${path.module}/install_httpd.sh", {})
 }
 
 resource "aws_security_group" "demo_sg"{

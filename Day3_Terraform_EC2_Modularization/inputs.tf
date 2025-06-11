@@ -15,7 +15,7 @@ variable "user_name"{
     type = string
 }
 
-variable "tags"{
+variable "tags_ec2"{
 
     description = "Tags"
     type = map(string)
@@ -27,4 +27,22 @@ variable "policy_name" {
 
 variable "policy_file"{
     
+}
+
+variable "ami_id"{}
+
+variable "region_name" {
+  
+}
+
+variable "instance_type" {
+  
+}
+
+variable "key_name" {
+  
+}
+
+variable "tags" {
+  
 }

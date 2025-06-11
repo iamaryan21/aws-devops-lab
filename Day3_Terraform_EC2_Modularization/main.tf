@@ -5,10 +5,16 @@ provider "aws"{
 
 module "EC2"{
     source = "./module/EC2"
-    ami_id = "ami-0f535a71b34f2d44a"
-    key_name = "devops-key-2"
-    instance_type = "t2.micro"
-    region_name = "ap-south-1"
+    ami_id = var.ami_id
+    key_name = var.key_name
+    instance_type = var.instance_type
+    region_name = var.region_name
+    tags = var.tags_ec2
+
+    # ami_id = "ami-0f535a71b34f2d44a"
+    # key_name = "devops-key-2"
+    # instance_type = "t2.micro"
+    # region_name = "ap-south-1"
 }
 
 module "s3_bucket"{
