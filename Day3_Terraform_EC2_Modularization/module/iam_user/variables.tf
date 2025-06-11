@@ -1,14 +1,3 @@
-variable "bucket_name"{
-
-    type = string
-}
-variable "bucket_policy" {
-    type = string
-}
-//variable "tags"{
-//    type = map(string)
-//}
-
 variable "user_name"{
 
     description = "Name of the user"
